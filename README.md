@@ -57,7 +57,7 @@ const searchClient = instantMeiliSearch(
 
 const App = () => (
   <InstantSearch
-    indexName="codesandbox-IS"
+    indexName="steam-video-games"
     searchClient={searchClient}
   >
     <SearchBox />

@@ -7,20 +7,18 @@
 <h4 align="center">
   <a href="https://github.com/meilisearch/MeiliSearch">MeiliSearch</a> |
   <a href="https://docs.meilisearch.com">Documentation</a> |
+  <a href="https://slack.meilisearch.com">Slack</a> |
   <a href="https://www.meilisearch.com">Website</a> |
-  <a href="https://blog.meilisearch.com">Blog</a> |
-  <a href="https://twitter.com/meilisearch">Twitter</a> |
   <a href="https://docs.meilisearch.com/faq">FAQ</a>
 </h4>
 
 <p align="center">
-  <a href="https://slack.meilisearch.com"><img src="https://img.shields.io/badge/slack-MeiliSearch-blue.svg?logo=slack" alt="Slack"></a>
   <a href="https://github.com/meilisearch/MeiliSearch/discussions" alt="Discussions"><img src="https://img.shields.io/badge/github-discussions-red" /></a>
 </p>
 
 <p align="center">⚡ How to integrate a front-end search bar in your React application using MeiliSearch</p>
 
-**MeiliSearch** is a powerful, fast, open-source, easy to use and deploy search engine. Both searching and indexing are highly customizable. Features such as typo-tolerance, filters, facets, and synonyms are provided out-of-the-box.
+**MeiliSearch** is an open-source search engine. [Discover what MeiliSearch is!](https://github.com/meilisearch/MeiliSearch)
 
 This repository describes the steps to integrate a relevant front-end search bar with a search-as-you-type experience!
 

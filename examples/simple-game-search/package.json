@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel serve ./public/index.html --global instantMeiliSearch --open ",
-    "build": "parcel build ./public/index.html --global instantMeiliSearch --open "
+    "build": "parcel build ./public/index.html --global instantMeiliSearch"
   },
   "keywords": [
     "react",

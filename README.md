@@ -29,7 +29,11 @@ To integrate a front-end search bar, you need to install two packages:
 - the MeiliSearch client [instant-meilisearch](https://github.com/meilisearch/instant-meilisearch/) to establish the communication between your MeiliSearch instance and the React InstantSearch library.<br>
 _Instead of reinventing the wheel, we have opted to reuse the InstantSearch library for our own front-end tooling. We will contribute upstream any improvements that may result from our adoption of InstantSearch._
 
-Run:
+NB: If you don't have any MeiliSearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/guides/introduction/quick_start_guide.html).
+
+### Using a package manager
+
+Run the following commands:
 
 ```bash
 $ yarn add react-instantsearch-dom @meilisearch/instant-meilisearch
@@ -37,9 +41,23 @@ $ yarn add react-instantsearch-dom @meilisearch/instant-meilisearch
 $ npm install react-instantsearch-dom @meilisearch/instant-meilisearch
 ```
 
-NB: If you don't have any MeiliSearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/guides/introduction/quick_start_guide.html).
+### Including in a HTML File
+
+Include the following `<script>` tags in your `html` file.
+
+```html
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/npm/react-instantsearch-dom@6.7.0/dist/umd/ReactInstantSearchDOM.js"></script>
+<!-- Light production build, for development remove `min` from file name  -->
+<script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
+```
+
+For more information on using `meilisearch-react` in an `html` file, see example in [examples/simple-game-search](./examples/simple-game-search).
 
 ## Getting Started
+
+The getting started uses the package manager.
 
 Thanks to the open-source React InstantSearch library, you can add these components to your application:
 

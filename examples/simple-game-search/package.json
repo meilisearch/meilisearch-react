@@ -1,0 +1,20 @@
+{
+  "name": "simple-game-search",
+  "version": "0.1.0",
+  "description": "Example of a simple game search using instant-meilisearch",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel serve ./public/index.html --global instantMeiliSearch --open ",
+    "build": "parcel build ./public/index.html --global instantMeiliSearch --open "
+  },
+  "keywords": [
+    "react",
+    "meilisearch",
+    "search"
+  ],
+  "author": "Charlotte Vermandel",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

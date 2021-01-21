@@ -36,7 +36,7 @@ Then run:
 
 ```bash
 $ yarn # or npm install
-$ yarn serve # or npm run serve
+$ yarn start # or npm run serve
 ```
 
 The project should automatically open on the following address: `http://localhost:1234`

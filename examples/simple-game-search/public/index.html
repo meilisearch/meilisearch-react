@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+   <!--
+    To use this browser build, please change the following stylesheet tag with this CDN
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
+   -->
+   <link rel="stylesheet" href="../src/basic_search.css" />
+</head>
+<html>
+  <body>
+      <div id="app" class="wrapper"></div>
+  </body>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-instantsearch-dom@6.7.0/dist/umd/ReactInstantSearchDOM.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
+  <script>
+    'use strict';
+      const { InstantSearch, SearchBox, Hits, Highlight, Configure }  = ReactInstantSearchDOM;
+      const searchClient = instantMeiliSearch(
+        "https://demos.meilisearch.com",
+        "dc3fedaf922de8937fdea01f0a7d59557f1fd31832cb8440ce94231cfdde7f25",
+      );
+
+      const App = () => (
+        React.createElement(InstantSearch, {
+          indexName: "steam-video-games",
+          searchClient: searchClient
+        }, [ 
+          React.createElement(SearchBox, { key: 1 }), 
+          React.createElement(Hits, { hitComponent: Hit, key: 2 }), 
+          React.createElement(Configure, { hitsPerPage: 10 })]
+        )
+      );
+      function Hit(props) {
+          return React.createElement(Highlight, {
+            attribute: "name",
+            hit: props.hit
+          })
+      }
+    const domContainer = document.querySelector('#app');
+    ReactDOM.render(React.createElement(App), domContainer);
+  </script>
+</html>

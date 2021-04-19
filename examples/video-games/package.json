@@ -1,0 +1,29 @@
+{
+  "name": "meilisearch-react-is",
+  "version": "0.1.0",
+  "description": "Demo to use MeiliSearch with React-IS",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@meilisearch/instant-meilisearch": "0.3.2",
+    "instantsearch.css": "7.4.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-instantsearch-dom": "6.8.2",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

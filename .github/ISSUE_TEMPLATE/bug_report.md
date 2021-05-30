@@ -25,5 +25,5 @@ If applicable, add screenshots or logs to help explain your problem.
 - Browser: [e.g. Chrome version 90.0]
 - MeiliSearch version: [e.g. v.0.20.0]
 - instant-meilisearch version: [e.g. v0.5.0]
-- instantsearch.js version: [e.g. v4.23.0]
+- react-instantsearch version: [e.g. v6.10.3]
 - Angular version: [e.g. 12.0.2]

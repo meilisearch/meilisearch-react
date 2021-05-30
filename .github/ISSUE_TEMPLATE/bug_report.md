@@ -26,4 +26,4 @@ If applicable, add screenshots or logs to help explain your problem.
 - MeiliSearch version: [e.g. v.0.20.0]
 - instant-meilisearch version: [e.g. v0.5.0]
 - react-instantsearch version: [e.g. v6.10.3]
-- Angular version: [e.g. 12.0.2]
+- React version: [e.g. 16.13.1]

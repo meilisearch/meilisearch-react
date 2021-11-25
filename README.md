@@ -64,6 +64,8 @@ const App = () => (
 );
 
 const Hit = ({ hit }) => <Highlight attribute="name" hit={hit} />;
+
+export default App
 ```
 
 🚀 For a full getting started example, please take a look at this CodeSandbox:

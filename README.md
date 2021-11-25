@@ -63,9 +63,7 @@ const App = () => (
   </InstantSearch>
 );
 
-function Hit(props) {
-  return <Highlight attribute="name" hit={props.hit} />;
-}
+const Hit = ({ hit }) => <Highlight attribute="name" hit={hit} />;
 ```
 
 🚀 For a full getting started example, please take a look at this CodeSandbox:

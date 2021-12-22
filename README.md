@@ -49,7 +49,7 @@ import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-d
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 
 const searchClient = instantMeiliSearch(
-  "https://demos.meilisearch.com",
+  "https://integration-demos.meilisearch.com",
   "dc3fedaf922de8937fdea01f0a7d59557f1fd31832cb8440ce94231cfdde7f25"
 );
 

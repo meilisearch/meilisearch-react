@@ -46,7 +46,7 @@ Thanks to the open-source React InstantSearch library, you can add these compone
 ```js
 import React from 'react';
 import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-dom';
-import { instantMeilisearch } from '@meilisearch/instant-meilisearch';
+import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 
 const searchClient = instantMeilisearch(
   "https://integration-demos.meilisearch.com",

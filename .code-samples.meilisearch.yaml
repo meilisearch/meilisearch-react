@@ -1,0 +1,23 @@
+landing_getting_started_1: |-
+  import React from 'react';
+  import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-dom';
+  import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+
+  const searchClient = instantMeiliSearch(
+    "http://localhost:7700",
+    "searchKey"
+  );
+
+  const App = () => (
+    <InstantSearch
+      indexName="movies"
+      searchClient={searchClient}
+    >
+      <SearchBox />
+      <Hits hitComponent={Hit} />
+    </InstantSearch>
+  );
+
+  function Hit(props) {
+    return <Highlight attribute="title" hit={props.hit} />;
+  }

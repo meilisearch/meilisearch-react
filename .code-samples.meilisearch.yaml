@@ -18,6 +18,4 @@ landing_getting_started_1: |-
     </InstantSearch>
   );
 
-  function Hit(props) {
-    return <Highlight attribute="title" hit={props.hit} />;
-  }
+  const Hit = (props) => (<Highlight attribute="title" hit={props.hit} />);

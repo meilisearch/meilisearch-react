@@ -19,3 +19,54 @@ landing_getting_started_1: |-
   );
 
   const Hit = (props) => (<Highlight attribute="title" hit={props.hit} />);
+getting_started_front_end_integration_md: |-
+  The following code sample uses [React](https://reactjs.org/), a JavaScript library for building web user interfaces.
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
+    </head>
+    <body>
+        <div id="app" class="wrapper"></div>
+    </body>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-instantsearch-dom@6.7.0/dist/umd/ReactInstantSearchDOM.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
+    <script>
+      const { InstantSearch, SearchBox, Hits, Highlight, Configure } = ReactInstantSearchDOM;
+      const searchClient = instantMeiliSearch(
+        "http://localhost:7700"
+      );
+      const App = () => (
+        React.createElement(InstantSearch, {
+          indexName: "movies",
+          searchClient: searchClient
+        }, [
+          React.createElement(SearchBox, { key: 1 }),
+          React.createElement(Hits, { hitComponent: Hit, key: 2 }),
+          React.createElement(Configure, { hitsPerPage: 10 })]
+        )
+      );
+
+      const Hit = (props) => (
+        React.createElement(Highlight, {
+          attribute: "title",
+          hit: props.hit
+        })
+      );
+      
+      const domContainer = document.querySelector('#app');
+      ReactDOM.render(React.createElement(App), domContainer);
+    </script>
+  </html>
+  ```
+
+  Here's what's happening:
+
+  - The `< div id="app">` inside `<body>` is React's entry point. `instant-meilisearch` creates the search bar and the search result container inside this HTML element by manipulating the DOM
+  - The first four`<script src="…">` tags import all the libraries required to run `instant-meilisearch` in [React](https://reactjs.org/).
+  - The last `<script>` tag initializes React, customizes `instant-meilisearch`, and creates all the required UI elements inside `<div id="app">`

@@ -58,9 +58,7 @@ getting_started_front_end_integration_md: |-
           hit: props.hit
         })
       );
-      
-      const domContainer = document.querySelector('#app');
-      ReactDOM.render(React.createElement(App), domContainer);
+      ReactDOM.createRoot(document.querySelector('#app')).render(App());
     </script>
   </html>
   ```

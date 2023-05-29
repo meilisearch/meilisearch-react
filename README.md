@@ -37,7 +37,7 @@ yarn add react-instantsearch-dom @meilisearch/instant-meilisearch
 npm install react-instantsearch-dom @meilisearch/instant-meilisearch
 ```
 
-NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://docs.meilisearch.com/learn/tutorials/getting_started.html).
+NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://www.meilisearch.com/docs/learn/getting_started/installation).
 
 ## Getting Started
 

@@ -26,7 +26,7 @@ This repository describes the steps to integrate a relevant front-end search bar
 
 To integrate a front-end search bar, you need to install two packages:
 - the open-source [React InstantSearch](https://github.com/algolia/instantsearch/) library powered by Algolia that provides all the front-end tools you need to highly customize your search bar environment.
-- the Meilisearch client [instant-meilisearch](https://github.com/meilisearch/instant-meilisearch/) to establish the communication between your Meilisearch instance and the React InstantSearch library.<br>
+- the Meilisearch client [instant-meilisearch](https://github.com/meilisearch/meilisearch-js-plugins/) to establish the communication between your Meilisearch instance and the React InstantSearch library.<br>
 _Instead of reinventing the wheel, we have opted to reuse the InstantSearch library for our own front-end tooling. We will contribute upstream any improvements that may result from our adoption of InstantSearch._
 
 Run:
@@ -77,7 +77,7 @@ export default App
 ## Customization and Documentation
 
 - The open-source React InstantSearch library is widely used and well documented in the [Algolia documentation](https://www.algolia.com/doc/api-reference/widgets/react/). It provides all the widgets to customize and improve your search bar environment in your React application.
-- The [instant-meilisearch documentation](https://github.com/meilisearch/instant-meilisearch/) to add some customization.
+- The [instant-meilisearch documentation](https://github.com/meilisearch/meilisearch-js-plugins/) to add some customization.
 - The [Meilisearch documentation](https://docs.meilisearch.com/).
 
 <hr>

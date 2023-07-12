@@ -25,7 +25,7 @@ This repository describes the steps to integrate a relevant front-end search bar
 
 ## ⚡ Supercharge your Meilisearch experience
 
-Say goodbye to server deployment and manual updates with [Meilisearch Cloud](https://www.meilisearch.com/pricing?utm_campaign=oss&utm_source=integration&utm_medium=meilisearch-ruby). No credit card required.
+Say goodbye to server deployment and manual updates with [Meilisearch Cloud](https://www.meilisearch.com/pricing?utm_campaign=oss&utm_source=integration&utm_medium=meilisearch-ruby). Get started with a 14-day free trial! No credit card required.
 
 ## Installation
 

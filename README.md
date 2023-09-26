@@ -37,9 +37,11 @@ _Instead of reinventing the wheel, we have opted to reuse the InstantSearch libr
 Run:
 
 ```bash
-yarn add react-instantsearch-dom @meilisearch/instant-meilisearch
+yarn add react-instantsearch @meilisearch/instant-meilisearch
 # or
-npm install react-instantsearch-dom @meilisearch/instant-meilisearch
+npm install react-instantsearch @meilisearch/instant-meilisearch
+# or
+pnpm add react-instantsearch @meilisearch/instant-meilisearch
 ```
 
 NB: If you don't have any Meilisearch instance running and containing your data, you should take a look at this [getting started page](https://www.meilisearch.com/docs/learn/getting_started/installation).
@@ -50,7 +52,7 @@ Thanks to the open-source React InstantSearch library, you can add these compone
 
 ```js
 import React from 'react';
-import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-dom';
+import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch';
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 
 const searchClient = instantMeiliSearch(

@@ -55,7 +55,7 @@ import React from 'react';
 import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch';
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
 
-const searchClient = instantMeiliSearch(
+const { searchClient } = instantMeiliSearch(
   'https://ms-adf78ae33284-106.lon.meilisearch.io',
   'a63da4928426f12639e19d62886f621130f3fa9ff3c7534c5d179f0f51c4f303'
 );
@@ -77,7 +77,7 @@ export default App
 
 🚀 For a full getting started example, please take a look at this CodeSandbox:
 
-[![Edit MS + React-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ms-react-is-sh9ud?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit MS + React-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/eager-dust-f98w2w)
 
 💡 If you have never used React InstantSearch before, we recommend reading this [getting started documentation](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/).
 

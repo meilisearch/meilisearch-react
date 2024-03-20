@@ -77,7 +77,7 @@ export default App
 
 🚀 For a full getting started example, please take a look at this CodeSandbox:
 
-[![Edit MS + React-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ms-react-is-sh9ud?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit MS + React-IS](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/eager-dust-f98w2w)
 
 💡 If you have never used React InstantSearch before, we recommend reading this [getting started documentation](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/).
 

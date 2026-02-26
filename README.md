@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/meilisearch/integration-guides/main/assets/logos/meilisearch_react.svg" alt="Meilisearch-React" width="200" height="200" />
 </p>
 
-<h1 align="center">Meilisearch React</h1>
+<h1 align="center">[ARCHIVED] Meilisearch React</h1>
 
 <h4 align="center">
   <a href="https://github.com/meilisearch/meilisearch">Meilisearch</a> |
@@ -18,6 +18,8 @@
   <a href="https://github.com/meilisearch/meilisearch-react/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-informational" alt="License"></a></p>
 
 <p align="center">⚡ How to integrate a front-end search bar in your React application using Meilisearch</p>
+
+🚨 VISIT [INSTANT-MEILISEARCH](https://github.com/meilisearch/meilisearch-js-plugins/tree/main/packages/instant-meilisearch) INSTEAD 🚨
 
 **Meilisearch** is an open-source search engine. [Discover what Meilisearch is!](https://github.com/meilisearch/meilisearch)
 
